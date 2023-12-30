@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sun.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sun" onclick="set(this)"></div>
+    <div class="mountain m1"></div>
+    <div class="mountain m2"></div>
+    <div class="text">HAPPY NEW YEAR</div>
+  </body>
+  <script>
+    function set(tt) {
+      tt.classList.add("move");
+
+      const text = document.querySelector(".text");
+      text.classList.add("textani");
+
+      const body = document.querySelector("body");
+      body.classList.add("bodyani");
+    }
+  </script>
+</html>

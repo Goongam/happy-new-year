@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+}
+.sun {
+  background-color: rgb(239, 52, 0);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 50vh;
+  left: calc(50vw - 50px);
+}
+.move {
+  /* transform: translate(56.5936vw, -10px) scale(0.1606); */
+  animation: fall-1 3s 0s both;
+}
+@keyframes fall-1 {
+  /* 0% {
+    transform: translateY(25%);
+  } */
+  50% {
+    transform: translateY(-100%);
+    z-index: 10;
+  }
+  to {
+    transform: translateY(-70%);
+    z-index: 10;
+  }
+}
+
+.mountain {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 250px solid #136918; /* 변경 가능한 높이 */
+  pointer-events: none;
+}
+
+.m1 {
+  z-index: 1;
+  top: 50vh;
+  left: calc(50vw - 150px - 100px);
+  /* 50vw - 200px : 가운데
+  -100px: 왼쪽으로 */
+}
+
+.m2 {
+  top: 50vh;
+  left: calc(50vw - 150px + 100px);
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 230px solid #0f4f12; /* 변경 가능한 높이 */
+  z-index: 0;
+}
+
+.text {
+  z-index: 100;
+  font-size: xx-large;
+  font-weight: 700;
+  position: absolute;
+  top: calc(50vh + 200px);
+  left: calc(50% - 100px);
+  opacity: 0;
+}
+.textani {
+  animation: showText 1s 3s both;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bodyani {
+  animation: bodyani 1s 3s both;
+}
+
+@keyframes bodyani {
+  to {
+    background-color: white;
+  }
+}
