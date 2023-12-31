@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="click">CLICK!</div>
       <div class="sun" onclick="set(this)">
         <div class="ex"></div>
         <div class="ex"></div>
@@ -36,6 +37,9 @@
 
       const ex = document.querySelectorAll(".ex");
       ex.forEach((e) => e.classList.add("show"));
+
+      const click = document.querySelector(".click");
+      click.style = "display:none;";
     }
   </script>
 </html>

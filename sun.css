@@ -11,7 +11,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  left: 50%;
+  left: 55%;
   /* top: 50vh; */
   display: flex; /* 내부 요소들을 가로로 정렬하기 위해 Flexbox 사용 */
   flex-direction: column; /* 세로로 정렬되도록 설정 */
@@ -30,7 +30,7 @@ body {
 }
 .move {
   /* transform: translate(56.5936vw, -10px) scale(0.1606); */
-  animation: fall-1 3s 0s both;
+  animation: fall-1 2s 0s both;
 }
 @keyframes fall-1 {
   /* 0% {
@@ -65,41 +65,41 @@ body {
 
 .ex:nth-child(1).show {
   transform: rotate(0deg) translateY(-150px);
-  animation: yellowToRed 1s 0s infinite, showEx 1s 3s both;
+  animation: yellowToRed 1s 0s infinite, showEx 1s 2s both;
 }
 
 .ex:nth-child(2).show {
   transform: rotate(40deg) translateY(-150px);
-  animation: redToYellow 1s 0s infinite, showEx 1s 3s both;
+  animation: redToYellow 1s 0s infinite, showEx 1s 2s both;
 }
 
 .ex:nth-child(3).show {
   transform: rotate(80deg) translateY(-150px);
-  animation: yellowToRed 1s 0s infinite, showEx 1s 3s both;
+  animation: yellowToRed 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(4).show {
   transform: rotate(120deg) translateY(-150px);
-  animation: redToYellow 1s 0s infinite, showEx 1s 3s both;
+  animation: redToYellow 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(5).show {
   transform: rotate(160deg) translateY(-150px);
-  animation: yellowToRed 1s 0s infinite, showEx 1s 3s both;
+  animation: yellowToRed 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(6).show {
   transform: rotate(200deg) translateY(-150px);
-  animation: redToYellow 1s 0s infinite, showEx 1s 3s both;
+  animation: redToYellow 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(7).show {
   transform: rotate(240deg) translateY(-150px);
-  animation: yellowToRed 1s 0s infinite, showEx 1s 3s both;
+  animation: yellowToRed 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(8).show {
   transform: rotate(280deg) translateY(-150px);
-  animation: redToYellow 1s 0s infinite, showEx 1s 3s both;
+  animation: redToYellow 1s 0s infinite, showEx 1s 2s both;
 }
 .ex:nth-child(9).show {
   transform: rotate(320deg) translateY(-150px);
-  animation: yellowToRed 1s 0s infinite, showEx 1s 3s both;
+  animation: yellowToRed 1s 0s infinite, showEx 1s 2s both;
 }
 @keyframes showEx {
   0% {
@@ -174,7 +174,7 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .textani {
-  animation: showText 1s 3s both;
+  animation: showText 1s 2s both;
 }
 
 @keyframes showText {
@@ -188,7 +188,7 @@ body {
 }
 
 .bodyani {
-  animation: bodyani 1s 3s both;
+  animation: bodyani 1s 2s both;
 }
 
 @keyframes bodyani {
@@ -205,3 +205,11 @@ body {
   background-color: white;
   z-index: -10;
 } */
+
+.click {
+  position: absolute;
+  color: white;
+  z-index: 100;
+  top: calc(50% - 100px);
+  left: -30px;
+}
